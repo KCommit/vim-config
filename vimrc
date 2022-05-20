@@ -1,12 +1,14 @@
 call plug#begin()
 
 	Plug 'valloric/youcompleteme', {'do': './install.py --ninja --clangd-completer'}
-	Plug 'rhysd/vim-clang-format', {'for': ['c', 'c++']}
+	Plug 'rhysd/vim-clang-format', {'for': ['c', 'cpp']}
 	Plug 'tpope/vim-commentary'
 	Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 	Plug 'sirver/ultisnips'
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
+	Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
 
 set number
