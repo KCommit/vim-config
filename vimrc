@@ -3,7 +3,7 @@ call plug#begin()
 	Plug 'rhysd/vim-clang-format', {'for': ['c', 'c++']}
 	Plug 'tpope/vim-commentary'
 	Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
-
+	Plug 'sirver/ultisnips'
 call plug#end()
 
 set number
@@ -14,3 +14,6 @@ set noswapfile
 colorscheme gruvbox
 
 autocmd BufWrite *.c,*.cpp,*.h,*.hpp :ClangFormat
+
+let g:UltiSnipsExpandTrigger="<c-e>"
+
