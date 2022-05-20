@@ -2,6 +2,8 @@ call plug#begin()
 	Plug 'valloric/youcompleteme', {'do': './install.py --ninja --clangd-completer'}
 	Plug 'rhysd/vim-clang-format', {'for': ['c', 'c++']}
 	Plug 'tpope/vim-commentary'
+	Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+
 call plug#end()
 
 set number
