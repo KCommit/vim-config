@@ -3,7 +3,7 @@ set encoding=utf-8
 call plug#begin()
 
 	Plug 'valloric/youcompleteme', {'do': './install.py --ninja --clangd-completer'}
-	Plug 'rhysd/vim-clang-format', {'for': ['c', 'cpp', 'objc', 'objcpp']}
+	Plug 'chiel92/vim-autoformat'
 	Plug 'tpope/vim-commentary'
 	Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 	Plug 'sirver/ultisnips'
@@ -20,7 +20,7 @@ set noswapfile
 
 colorscheme gruvbox
 
-autocmd BufWrite *.c,*.cpp,*.h,*.hpp,*.m,*.mm :ClangFormat
+autocmd BufWrite *.c,*.cpp,*.h,*.hpp,*.m,*.mm :Autoformat
 
 let g:UltiSnipsExpandTrigger="<c-e>"
 
