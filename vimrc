@@ -1,11 +1,10 @@
 set nocompatible
 set encoding=utf-8
 call plug#begin()
-
 	Plug 'valloric/youcompleteme', {'do': './install.py --ninja --clangd-completer'}
 	Plug 'chiel92/vim-autoformat'
 	Plug 'tpope/vim-commentary'
-	Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+	Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 	Plug 'sirver/ultisnips'
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
