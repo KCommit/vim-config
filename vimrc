@@ -1,6 +1,7 @@
 set nocompatible
 set encoding=utf-8
 call plug#begin()
+	Plug 'fatih/vim-go'
 	Plug 'valloric/youcompleteme', {'do': './install.py --ninja --clangd-completer'}
 	Plug 'chiel92/vim-autoformat'
 	Plug 'tpope/vim-commentary'
